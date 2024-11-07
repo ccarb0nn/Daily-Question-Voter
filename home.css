@@ -1,0 +1,44 @@
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #777696;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling Header 1 (Welcome user) */
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Style the options list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Style for each option link */
+ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color:#a9a9a9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+}
+
+ul li a:hover {
+    background-color: #808080;
+}

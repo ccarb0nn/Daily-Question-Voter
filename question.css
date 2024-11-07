@@ -1,0 +1,118 @@
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #777696;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for Question and Options/Votes */
+.box {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #a9a9a9;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    margin: 10px 0;
+}
+
+/* View Option Menu Button */
+a {
+    display: block;
+    padding: 10px 20px;
+    background-color:#a9a9a9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    margin: 40px 0 5px 0;
+}
+
+a:hover {
+    background-color: #808080;
+}
+
+/* Question Text */
+p {
+    display: block;
+    padding: 10px 20px;
+    background-color:#a9a9a9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    margin: 5px 0;
+}
+
+/* Containing the options */
+.option-container {
+    display: flex;             
+    flex-direction: column;  
+}
+
+
+.option-box {
+    display: flex;            
+    padding: 10px 20px;
+    background-color:#a9a9a9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    margin: 5px 0;          
+}
+
+/* Style for radio buttons */
+.option-box input[type="radio"] {
+    display: none;        
+}
+
+.option-box label{
+    display: block;            
+    padding: 10px 20px;
+    background-color:#a9a9a9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    margin: 5px 0;          
+}
+
+.option-box:hover {
+    background-color: #808080;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #808080;; 
+    color: #fff;               
+    border-radius: 5px;        
+}
+
+/* Submit button styling */
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background-color: #a9a9a9;
+    color: #fff;
+    border-radius: 5px;
+    font-szie: 16px;
+}
+
+input[type="submit"]:hover{
+    background-color: #808080;
+}

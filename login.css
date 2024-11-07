@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Html body styling */
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	background-color: #777696;
+	color: #333;
+}
+
+.loginBox {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.registerBox {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 40px 0 5px 0;
+}
+
+/* Form styling */
+form {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	width: 300px;
+	text-align: center;
+}
+
+/* Header 1 styling */
+h1 {
+	margin-bottom: 20px;
+	font-szie: 24px;
+	color: #333;
+}
+
+/* Error Message Styling */
+p {
+	color: #e63946;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+	display: block;
+	font-sise: 16px;
+	color: #333;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+/* Input Box Styling */
+input[type="text"], input[type="password"], input[type="number"], select{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+/* Submit button styling */
+input[type="submit"]{
+	width: 100%;
+	padding: 10px;
+	background-color: #a9a9a9;
+	color: whitesmokeborder: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-szie: 16px;
+}
+
+input[type="submit"]:hover{
+	background-color: #808080;
+}

@@ -1,0 +1,50 @@
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #777696;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling Header 1 (Profile: Username) */
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+/* View Profile Option Menu Button */
+a {
+    display: block;
+    padding: 10px 20px;
+    background-color:#a9a9a9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    margin: 40px 0 5px 0;
+}
+
+a:hover {
+    background-color: #808080;
+}
+
+/* Profile info */
+p {
+    display: block;
+    padding: 10px 20px;
+    background-color:#a9a9a9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    margin: 5px 0;
+}
