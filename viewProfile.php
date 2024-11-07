@@ -9,15 +9,16 @@ if(isset($_SESSION['username'])){
     //Run the Python code to get the Profile info from C++
     $profile = trim(shell_exec("py viewProfile.py $username"));
 
-    //Displaying the Profile infovto the website
+    //Displaying the Profile info to the website
     if(!empty($profile)){
-        list($username, $password, $age, $gender, $voted) = explode(" ", trim($profile));
+        list($username, $password, $age, $gender, $voted, $voteChoice) = explode(" ", trim($profile));
     }
     else{
         $username = "ERROR";
         $age = "ERROR";
         $gender = "ERROR";
         $voted = "ERROR";
+        $voteChoice = "ERROR";
     }
 }
 else{
@@ -41,6 +42,7 @@ else{
     <p>Age: <?php echo htmlspecialchars($age); ?></p>
     <p>Gender: <?php echo htmlspecialchars($gender); ?></p>
     <p>Voted Today: <?php echo htmlspecialchars($voted); ?></p>
+    <p>Voted On Option: <?php echo htmlspecialchars($voteChoice); ?></p>
     <a href="home.php">Option Menu</a>
 </body>
 

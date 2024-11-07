@@ -16,11 +16,11 @@ else{
 }
 
 //Run the Python code to get the Profile info from C++
-$profile = trim(shell_exec("py viewProfile.py $username"));
+$profile = trim(shell_exec("py viewProfile.py $username")); //Is this section needed?
 
-//Displaying the Profile infovto the website
+//Displaying the Profile info to the website
 if(!empty($profile)){
-    list($username, $password, $age, $gender, $voted) = explode(" ", trim($profile));
+    list($username, $password, $age, $gender, $voted, $voteChoice) = explode(" ", trim($profile)); //Is this section needed?
 }
 ?>
 

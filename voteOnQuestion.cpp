@@ -46,27 +46,35 @@ struct User{
 	std::string age;
 	std::string gender;
 	std::string voted;
+	std::string voteChoice;
 };
 
-void saveUserVotingStatus(const std::string& filename, const std::string& currentUser, const std::string& voted){
+void saveUserVotingStatus(const std::string& filename, const std::string& currentUser, const std::string& voted, const std::string& vote){
 	std::ifstream file(filename);
 	std::vector<User> users;
 	User userInfo;
 
 	// Load existing users
-    while (file >> userInfo.username >> userInfo.password >> userInfo.age >> userInfo.gender >> userInfo.voted) {
+    while (file >> userInfo.username >> userInfo.password >> userInfo.age >> userInfo.gender >> userInfo.voted >> userInfo.voteChoice) {
         users.push_back(userInfo);
     }
 
     for (auto& user : users) {
         if (user.username == currentUser) {
             user.voted = voted; // Update the voting status
+
+            if(vote == 'A'){
+            	user.voteChoice = 'A';
+            }
+            else if(vote == 'B'){
+            	user.voteChoice = 'B';
+            }
         }
     }
 
 	std::ofstream outFile(filename);
 	for(const auto& user : users){
-		outFile << user.username << " " << user.password << " " << user.age << " " << user.gender << " " << user.voted << std::endl;
+		outFile << user.username << " " << user.password << " " << user.age << " " << user.gender << " " << user.voted << " " << user.voteChoice << std::endl;
 	}
 
 }
@@ -111,7 +119,7 @@ int main(int argc, char* argv[]) {
 	saveQuestions(filename, questions);
 
 	//Save users voting status
-	saveUserVotingStatus("USERS.txt", username, "true");
+	saveUserVotingStatus("USERS.txt", username, "true", vote);
 	
 	std::cout << "Vote updated successfully!" << std::endl;
 

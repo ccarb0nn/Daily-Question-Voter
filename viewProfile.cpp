@@ -11,6 +11,7 @@ struct User{
 	std::string age;
 	std::string gender;
 	std::string voted;
+	std::string voteChoice;
 };
 
 std::vector<User> loadUsers(const std::string& filename){
@@ -26,7 +27,8 @@ std::vector<User> loadUsers(const std::string& filename){
 		std::getline(iss, usr.password, ' ');
 		std::getline(iss, usr.age, ' ');
 		std::getline(iss, usr.gender, ' ');
-		std::getline(iss, usr.voted);
+		std::getline(iss, usr.voted, ' ');
+		std::getline(iss, usr.voteChoice);
 
 		users.push_back(usr);
 	}
@@ -48,7 +50,7 @@ int main(int argc, char* argv[]){
 
 	for(const User& usr : users){
 		if(usr.username == username){
-			std::cout << usr.username << " " << usr.password << " " << usr.age << " " << usr.gender << " " << usr.voted;
+			std::cout << usr.username << " " << usr.password << " " << usr.age << " " << usr.gender << " " << usr.voted << " " << usr.voteChoice;
 			return 0;
 		}
 	}

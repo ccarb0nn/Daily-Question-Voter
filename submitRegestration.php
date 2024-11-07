@@ -7,6 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$age = htmlspecialchars(trim($_POST['age']));
 	$gender = htmlspecialchars(trim($_POST['gender']));
 	$voted = htmlspecialchars(trim("false"));
+	$voteChoice = htmlspecialchars(trim("X"));
 
 	//Check if provided username is not taken
 	function validateUsername($username){
@@ -32,9 +33,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	}
 	 	
 
-	function saveUsersToFile($username, $password, $age, $gender, $voted){
+	function saveUsersToFile($username, $password, $age, $gender, $voted, $voteChoice){
 		$file = 'USERS.txt';
-		$userInfo = "$username $password $age $gender $voted" . PHP_EOL;
+		$userInfo = "$username $password $age $gender $voted $voteChoice" . PHP_EOL;
 		file_put_contents($file, $userInfo, FILE_APPEND);
 	}	
 
@@ -42,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	//If user name is not taken, save user info and prompt them to login
 	if($status){
-		saveUsersToFile($username, $password, $age, $gender, $voted);
+		saveUsersToFile($username, $password, $age, $gender, $voted, $voteChoice);
 		$_SESSION['username'] = $username;
 		header('Location: login.php');
 		exit();
