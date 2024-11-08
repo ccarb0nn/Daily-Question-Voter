@@ -101,12 +101,17 @@ int main(int argc, char* argv[]) {
 		return 1;
 	}
 
+	std::ifstream file("randomNumber.txt");
+	std::string num;
+	std::getline(file, num);
+	int questionNum = std::stoi(num);
+
 	//Checking for vote
 	if(vote == "A"){
-		questions[0].votesA++;
+		questions[questionNum].votesA++;
 	}
 	else if(vote == "B"){
-		questions[0].votesB++;
+		questions[questionNum].votesB++;
 	}
 	
 	//Save the vote/question to the file (questions.txt)

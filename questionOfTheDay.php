@@ -35,6 +35,7 @@ if(!empty($profile)){
 
 	<?php if ($voted == "true"): ?>
 		<p> Already Voted Today... Wait Till Tomorrow To Vote Again!</p>
+		<a href="viewVotingResults.php">View Voting Results</a>
 		<a href="home.php">Option Menu</a>
 	<?php else: ?>
 		<!-- Displaying Question and voting Options -->

@@ -4,6 +4,8 @@
 #include <sstream>
 #include <vector>
 #include <map>
+#include <cstdlib>
+#include <chrono>
 
 struct Question{
 	std::string question;
@@ -50,9 +52,7 @@ void saveQuestions(const std::string& filename, const std::vector<Question>& que
 
 
 int main() {
-
-	//get a random number in range from the number of questions available and replace that with the value 0
-	//This way it chooses a different number each day. After this adjust it so the users voting status resets each day.
+	std::srand(std::time(0));
 	
 	//load questions in from text file
 	auto questions = loadQuestions("questions.txt");
@@ -62,8 +62,13 @@ int main() {
 		std::cout << "No Question..." << std::endl;
 		return 1;
 	}
+	//access the random number txt file to get the random question of the day value 
+	std::ifstream file("randomNumber.txt");
+	std::string strNumber;
+	std::getline(file, strNumber);
+	int randomQuestion = std::stoi(strNumber);
 
-	std::cout << questions[0].question << "," << questions[0].optionA << "," << questions[0].optionB;
+	std::cout << questions[randomQuestion].question << "," << questions[randomQuestion].optionA << "," << questions[randomQuestion].optionB;
 
 	return 0;
 }

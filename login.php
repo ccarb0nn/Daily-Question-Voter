@@ -35,11 +35,16 @@
                 $voteChoice = "X";
                 $updateUserInfo = "$username $password $age $gender $votingStatus $voteChoice";
             }
+        
+            //Run the Python code to get a random number which will represent the random Question of The Day from the C++ program
+            $randomNumber = trim(shell_exec("py randomNumber.py"));
+            //store the random value in the txt file
+            file_put_contents('randomNumber.txt', $randomNumber);
 
             //update the USERS.txt file with the new voting status for all users
             file_put_contents('USERS.txt', $updateUserInfo);
             //Update new last reset date (current date)
-            file_put_contents('lastResetDate.txt', $currentDate);
+            file_put_contents('lastResetDate.txt', $currentDate); 
         }
 
         ?>

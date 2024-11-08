@@ -1,1 +1,10 @@
 Would you rather be able to Fly or Telleport?,Fly,Telleport,0,0
+Would you rather know the history of every object you touched or be able to talk to animals?,Object History,Talk to animals,0,0
+Would you rather never be able to listen to music again or never be able to watch TV again?,No music,No TV,0,0
+Would you rather be able to teleport into the future or be able to teleport into the past?,Future,Past,0,0
+Would you rather have a pause or a rewind button in your life?,Pause button,Rewind button,0,0
+Would you rather be in a zombie apocalypse or a robot apocalypse?,Zombie,Robot,0,0
+Would you rather have a pet dog or cat?,Dog,Cat,0,0
+Would you rather be able to speak any language or speak to animals?,Speak any language,Speak to animals,0,0
+Would you rather have to use a spoon for every meal or a fork for every meal?,Spoon,Fork,0,0
+Would you rather be able to live in any movie or live in any part of the past for the rest of your life?,Movie,Past,0,0 

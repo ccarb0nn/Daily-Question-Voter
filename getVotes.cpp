@@ -59,8 +59,12 @@ int main() {
 		std::cout << "No Question..." << std::endl;
 		return 1;
 	}
+	std::ifstream file("randomNumber.txt");
+	std::string num;
+	std::getline(file, num);
+	int questionNum = std::stoi(num);
 
-	std::cout << questions[0].question << "," << questions[0].optionA << "," << questions[0].optionB << "," << questions[0].votesA << "," << questions[0].votesB;
+	std::cout << questions[questionNum].question << "," << questions[questionNum].optionA << "," << questions[questionNum].optionB << "," << questions[questionNum].votesA << "," << questions[questionNum].votesB;
 
 	return 0;
 }
