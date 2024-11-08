@@ -62,13 +62,7 @@ void saveUserVotingStatus(const std::string& filename, const std::string& curren
     for (auto& user : users) {
         if (user.username == currentUser) {
             user.voted = voted; // Update the voting status
-
-            if(vote == 'A'){
-            	user.voteChoice = 'A';
-            }
-            else if(vote == 'B'){
-            	user.voteChoice = 'B';
-            }
+            user.voteChoice = vote;
         }
     }
 

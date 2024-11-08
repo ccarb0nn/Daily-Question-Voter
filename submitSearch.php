@@ -7,13 +7,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     //Getting the Profile info
     if(!empty($profile)){
-        list($username, $password, $age, $gender, $voted) = explode(" ", trim($profile));
+        list($username, $password, $age, $gender, $voted, $voteChoice) = explode(" ", trim($profile));
     }
     else{
         $username = "NOT FOUND";
         $age = "NOT FOUND";
         $gender = "NOT FOUND";
         $voted = "NOT FOUND";
+        $voteChoice = "NOT FOUND";
     }
 }
 
@@ -44,6 +45,7 @@ function validateUser($user){
     <p>Age: <?php echo htmlspecialchars($age); ?></p>
     <p>Gender: <?php echo htmlspecialchars($gender); ?></p>
     <p>Voted Today: <?php echo htmlspecialchars($voted); ?></p>
+    <p>Voted For Option: <?php echo htmlspecialchars($voteChoice); ?></p>
     <a href="home.php">Option Menu</a>
 </body>
 

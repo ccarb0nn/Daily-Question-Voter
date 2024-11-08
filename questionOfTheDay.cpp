@@ -50,6 +50,9 @@ void saveQuestions(const std::string& filename, const std::vector<Question>& que
 
 
 int main() {
+
+	//get a random number in range from the number of questions available and replace that with the value 0
+	//This way it chooses a different number each day. After this adjust it so the users voting status resets each day.
 	
 	//load questions in from text file
 	auto questions = loadQuestions("questions.txt");
