@@ -4,7 +4,7 @@ Caleb Carbonneau
 
 This project is a Daily Question Voter where all users have the opertunity to vote on the same random "would you rather" question once a day. This "would you rather" question changes each day but is the same question for all users. When accessing this application, the user will be prompted with a screen to either login to an existing account or create a new account with a unique username. Once the user has created an account with a unique username and/or has logged into their account, they will then be able to access all the features that this application offers. 
 
-Users will have the options to view their profile which will show them their username, gender, age, whether they voted that day, what option they voted for, and the ability to view all previous questions/options that they have voted for. 
+Users will have the option to view their profile which will show them their username, gender, age, whether they voted that day, what option they voted for, and the ability to view all previous questions/options that they have voted for. 
 
 Users will also have the ability to vote on the question of the day where they will access a "would you rather" question with two options to vote on. When the user makes their vote, it will save their vote and update the voting results for that question and will no longer allow the user to vote again for that day. Users will still have the ability to check the voting results for the current question but they can no lomger submit a vote till the next day when there is a new question.
 
