@@ -33,7 +33,7 @@
                 list($username, $password, $age, $gender, $votingStatus, $voteChoice) = explode(" ", $line);
                 $votingStatus = "false";
                 $voteChoice = "X";
-                $updateUserInfo = "$username $password $age $gender $votingStatus $voteChoice";
+                $updateUserInfo = "$username $password $age $gender $votingStatus $voteChoice" . PHP_EOL;
             }
         
             //Run the Python code to get a random number which will represent the random Question of The Day from the C++ program

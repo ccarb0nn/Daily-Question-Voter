@@ -106,12 +106,18 @@ int main(int argc, char* argv[]) {
 	std::getline(file, num);
 	int questionNum = std::stoi(num);
 
+	//Save question that user voted on to their personal txt file (stores all question the user has voted on)
+	std::string fileName = username + ".txt";
+	std::ofstream outFile(fileName, std::ios::app);
+
 	//Checking for vote
 	if(vote == "A"){
 		questions[questionNum].votesA++;
+		outFile << questions[questionNum].question << "," << questions[questionNum].optionA << "\n";
 	}
 	else if(vote == "B"){
 		questions[questionNum].votesB++;
+		outFile << questions[questionNum].question << "," << questions[questionNum].optionB << "\n";
 	}
 	
 	//Save the vote/question to the file (questions.txt)

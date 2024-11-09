@@ -43,6 +43,7 @@ else{
     <p>Gender: <?php echo htmlspecialchars($gender); ?></p>
     <p>Voted Today: <?php echo htmlspecialchars($voted); ?></p>
     <p>Voted On Option: <?php echo htmlspecialchars($voteChoice); ?></p>
+    <a href="previousVotes.php">Previous Votes</a>
     <a href="home.php">Option Menu</a>
 </body>
 
