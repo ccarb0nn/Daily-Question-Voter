@@ -14,7 +14,7 @@ Lastly users will also be able to submit their own "would you rather" questions 
 
 ## Languages Used
 
-This project relies on HTML, PHP, Python, and C++
+This project relies on HTML, CSS, PHP, Python, and C++
 
 - This project uses HTML to dispaly the programs output to the user so it is easier to see and interact with. HTML is used to display the welcome screen, login/regestration screen, home/option screen, view profile screen, view question of the day screen, view voting reslts screen, search for user screen, and question submittion screen.
 - In addition to using HTML this project also uses PHP to collect information such as regestration form, login form, search for user form, and submit question form. PHP also works with the Python and C++ programs to get information on the question of the day, users profile information, and login verification.
