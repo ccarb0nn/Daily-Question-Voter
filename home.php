@@ -26,7 +26,7 @@ $username = $_SESSION['username'];
 		<li><a href="questionOfTheDay.php">View Question of The Day</a></li>
 		<li><a href="viewVotingResults.php">View Voting Results</a></li>
 		<li><a href="searchUser.php">Search for User</a></li>
-		<li><a href="searchUser.php">Submit Question</a></li>  <!-- Change Link to new php/html site -->
+		<li><a href="questionSubmition.php">Submit Question</a></li>
 		<li><a href="welcome.html">Logout</a></li>
 	</ul>
 </body>
