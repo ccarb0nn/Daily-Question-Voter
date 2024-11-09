@@ -6,7 +6,7 @@ This project is a Daily Question Voter where all users have the opertunity to vo
 
 Users will have the option to view their profile which will show them their username, gender, age, whether they voted that day, what option they voted for, and the ability to view all previous questions/options that they have voted for. 
 
-Users will also have the ability to vote on the question of the day where they will access a "would you rather" question with two options to vote on. When the user makes their vote, it will save their vote and update the voting results for that question and will no longer allow the user to vote again for that day. Users will still have the ability to check the voting results for the current question but they can no lomger submit a vote till the next day when there is a new question.
+Users will also have the ability to vote on the question of the day where they will access a "would you rather" question with two options to vote on. When the user makes their vote, it will save their vote and update the voting results for that question and will no longer allow the user to vote again for that day. Users will still have the ability to check the voting results for the current question but they can no longer submit a vote till the next day when there is a new question.
 
 Users will also be able to search for other users profiles where they will be able to see that users profile information such as username, age, gender, whether they voted that day, what option they voted for, and they will be able to view the questions and votes that the user has previously voted on.
 
