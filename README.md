@@ -43,4 +43,4 @@ I installed XAMPP to run Apache and host the project on my computers localhost n
 - https://css-tricks.com/almanac/properties/l/list-style/
 - https://www.w3schools.com/CSS/css_display_visibility.asp from: https://www.w3schools.com/CSS/default.asp
 - https://html-color.codes/
-- (Included Some Python Code Provided By: Lisa Dion - CS 2300: Advanced Programming) 
+- (Included Some Python Code Provided By: Lisa Dion - UVM CS 2300: Advanced Programming) 
