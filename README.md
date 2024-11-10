@@ -1,22 +1,36 @@
 Caleb Carbonneau
 
-Instolations:
-- You may need to install XAMPP to run Apache to host the program since the schools was not able to access any of the python output which resulted in the project to not work.
+# Daily Question Voter
 
-Project Summary:
-- My project is an application which offers users the ability to vote on a would you rather question each day, once a day. To vote users will have to register which will grant them access to the features. Users can vote once, view voting results, search for other users, and logout. This project is an extension of M1OEP & M2OEP.
+This project is a Daily Question Voter where all users have the opertunity to vote on the same random "would you rather" question once a day. This "would you rather" question changes each day but is the same question for all users. When accessing this application, the user will be prompted with a screen to either login to an existing account or create a new account with a unique username. Once the user has created an account with a unique username and/or has logged into their account, they will then be able to access all the features that this application offers. 
 
-Program Languages
-- My program starts off in HTML where it displays a screen which asks the user if they are a new or returning user. Once the user has made a selection, a php program takes this information and passes it to a python script which then compiles a c++ program which validates and stores the information. This same proccess happens when the user logs in, votes, view voting results, and searches for other users profiles. 
-- I chose html/php since it allowed me to visulize the prompts and information for the user while taking user input which I could then use to pass on to my python programs.
-- I used Python to recive the information from PHP and to compile and pass this information onto a C++ program. This happens each time the user submits a login, view question, view voting results, and user search.
-- I used C++ to take in information from python and validate and store it in txt files which could be easily accessed later on, such as user profile information and questions that would be used for question of the day. I also used C++ for validating user input such as login, regestration, and user search. These results would then be passed back to python which would then pass it back to PHP and would be displayed using HTML. 
-- I also used CSS to style my HTML pages so they were easier to view and had more style to them. 
+Users will have the option to view their profile which will show them their username, gender, age, whether they voted that day, what option they voted for, and the ability to view all previous questions/options that they have voted for. 
 
-Future Work
-- If I had more time I would have liked to have added more questions and added a feature that would randomly pick a question from the txt file and then get rid of it from the file so it cant be pciked again. I would have also liked to save the results to that question to a new txt file for future viewing. I also would have liked to implement the feature where the user can submit their own question. And lastly if I had more time I would go back and add a feature that auto resets the users voting status so each new day it would reset and let them vote (currently have to do it manually). In addition to that I would have liked to added the voting lock again which prevents users from voting past 10pm.
+Users will also have the ability to vote on the question of the day where they will access a "would you rather" question with two options to vote on. When the user makes their vote, it will save their vote and update the voting results for that question and will no longer allow the user to vote again for that day. Users will still have the ability to check the voting results for the current question but they can no longer submit a vote till the next day when there is a new question.
 
-citations: 
+Users will also be able to search for other users profiles where they will be able to see that users profile information such as username, age, gender, whether they voted that day, what option they voted for, and they will be able to view the questions and votes that the user has previously voted on.
+
+Lastly users will also be able to submit their own "would you rather" questions that they would like to see be featured for the question of the day. The user will have to provide their question along with the two seperated options that will be voted on. When the user submits their question it will be saved allong side their username so they can be credited for their submission. 
+
+## Languages Used
+
+This project relies on HTML, CSS, PHP, Python, and C++
+
+- This project uses HTML to dispaly the programs output to the user so it is easier to see and interact with. HTML is used to display the welcome screen, login/regestration screen, home/option screen, view profile screen, view question of the day screen, view voting reslts screen, search for user screen, and question submittion screen.
+- In addition to using HTML this project also uses PHP to collect information such as regestration form, login form, search for user form, and submit question form. PHP also works with the Python and C++ programs to get information on the question of the day, users profile information, and login verification.
+- Python is used throughout this project to take information from PHP which Python then passes on to C++ when compiling the C++ programs. From there the C++ programs run and returns the output back to the Python scripts which than sends the output back to the PHP scripts.
+- C++ is used to compile and return data that is provided by the Python scripts. The C++ programs in this project handle getting the question of the day, handles updating the votes for each option, handels getting the current question voting results, verifies the users login credentials, retreives the users profile information, and generating and stores a random number which is used to pick the "would you rather" question of the day.
+- This project also uses CSS to style the HTML pages so it has a more unique look while making features such as the submisions forms eaiser for the user to navigate and use while traversing the application. 
+
+## Instolations
+I installed XAMPP to run Apache and host the project on my computers localhost network.
+
+## Future Work
+- I would like to add a feature where users have the ability to vote on the questions that users have submitted that they would like to see be added.
+- I would like to add a program that grabs existing "woud you rather" questions from the web that could be added the the questions text file so there are more "would you rather" questions to choose from
+- I would like to update the code so once the question of the day is selected it would be removed from the list of questions and be added to a list of used questions that way their is no way it could be picked again
+
+# Citations: 
 - https://stackoverflow.com/questions/11074908/how-do-i-read-each-line-from-a-file-in-php
 - https://www.w3schools.com/PHP/php_file_open.asp
 - https://stackoverflow.com/questions/1768894/how-to-write-into-a-file-in-php
@@ -29,12 +43,3 @@ citations:
 - https://css-tricks.com/almanac/properties/l/list-style/
 - https://www.w3schools.com/CSS/css_display_visibility.asp from: https://www.w3schools.com/CSS/default.asp
 - https://html-color.codes/
-
-Grade Reflection:
-- (Main Program Complexity and Usability) - I think I earned full points for this section since I used 3-4 languages in my project and made it easy for the user to navigate by styling each HTML page to be easy to view and interact with. In addition to this I also implemented user input validation such as user log in credentials and user search. 
-- (Use of Multiple Languages) - I belive I earned full points for this section since I succesffuly implemented 3-4 languages through out my project which were all used frequently. I enjoyed learning how to implement multiple langauges into one project and I feel like my project really helped me get a full understadning of how the proccess works. 
-- (Use of Languages) - I think I either got full points or may be at 10pts since I was picking the languages for my project based on similar projects we had in class such as the AP Testing-Website. The reason I would say I may lose points is because im not sure if implementing C++ was as effeicent as of other methods however I still think it works well with my project and worked as intended. 
-- (Command line Arguments / File Input & Output) - For this section I feel like I earned full points since I frequently passed comand line arguments to each langauge such as when the user inputs the username for search, the PHP passes it to Python and Python passes it to C++ all through the command line. In addition to that, like my previous OEP, I stored user information and the questions into a txt file which was frequently read from and written to. 
-- (Style and Documentation) - I think I may lose some points but not many since my style was pretty consistant and I had a decent amount of comments through out my code but there were areas which I could have added more comments to but since I kept reusing bits of my code in other areas of the project, I tended to slowly stoped keeping up with the comments across all files. 
-- (Video) - I dont think I lost any points on this section. My video was shorter then my previous demo videos and I was able to show all the features and demonstrate input validation. 
-- (Lifespan of Project) - I dont think I lost any points in this section since my repository had a lifespan of at least 7 days and each day I would make significant contributes throuhought the projects lifespan.  

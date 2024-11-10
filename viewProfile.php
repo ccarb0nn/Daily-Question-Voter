@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+//Unset searched user's username (resets here if the current user did not view the searched users previous votes)
 unset($_SESSION['searchedUser']);
 
 //Checking if user is logged in
