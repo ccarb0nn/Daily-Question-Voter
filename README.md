@@ -20,7 +20,7 @@ This project relies on HTML, CSS, PHP, Python, and C++
 - C++ is used to compile and return data that is provided by the Python scripts. The C++ programs in this project handle getting the question of the day, handles updating the votes for each option, handels getting the current question voting results, verifies the users login credentials, retreives the users profile information, and generating and stores a random number which is used to pick the "would you rather" question of the day.
 - This project also uses CSS to style the HTML pages so it has a more unique look while making features such as the submisions forms eaiser for the user to navigate and use while traversing the application. 
 
-## Instolations
+## Installations
 I installed XAMPP to run Apache and host the project on my computers localhost network.
 
 ## Future Work
