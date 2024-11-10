@@ -25,9 +25,9 @@ I installed XAMPP to run Apache and host the project on my computers localhost n
 
 ## Future Work
 - I would like to add a feature where users have the ability to vote on the questions that users have submitted that they would like to see be added.
-- I would like to add a program that grabs existing "woud you rather" questions from the web that could be added the the questions text file so there are more "would you rather" questions to choose from
-- I would like to update the code so once the question of the day is selected it would be removed from the list of questions and be added to a list of used questions that way their is no way it could be picked again
-- I would like to work on implementing hashing for the users password so it is stored safely   
+- I would like to add a program that grabs existing "woud you rather" questions from the web that could be added to the questions text file so there are more "would you rather" questions to choose from.
+- I would like to update the code so once the question of the day is selected it would be removed from the list of questions and be added to a list of used questions that way their is no way it could be picked again.
+- I would like to work on implementing hashing for the users password so it is stored safely.   
 
 # Citations: 
 - https://stackoverflow.com/questions/11074908/how-do-i-read-each-line-from-a-file-in-php
