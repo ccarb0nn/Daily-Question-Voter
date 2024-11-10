@@ -19,6 +19,6 @@ echo htmlspecialchars("Thank You For Voting!");
 $_SESSION['voted'] = "true";
 
 //Redirect user to home.php (Option Menue screen)
-header("Location: home.php");
+header("Location: viewVotingResults.php");
 exit();
 ?>

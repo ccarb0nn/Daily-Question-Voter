@@ -22,11 +22,11 @@ $username = $_SESSION['username'];
 <body>
 	<h1> Welcome <?php echo htmlspecialchars($username); ?>!</h1>
 	<ul>
-		<li><a href="viewProfile.php">View Profile</a></li>
-		<li><a href="questionOfTheDay.php">View Question of The Day</a></li>
+		<li><a href="questionOfTheDay.php">Vote On Question of The Day</a></li>
 		<li><a href="viewVotingResults.php">View Voting Results</a></li>
+		<li><a href="questionSubmition.php">Submit A Question</a></li>
+		<li><a href="viewProfile.php">View Profile</a></li>
 		<li><a href="searchUser.php">Search for User</a></li>
-		<li><a href="questionSubmition.php">Submit Question</a></li>
 		<li><a href="welcome.html">Logout</a></li>
 	</ul>
 </body>

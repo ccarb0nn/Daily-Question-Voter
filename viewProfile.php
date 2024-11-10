@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+unset($_SESSION['searchedUser']);
+
 //Checking if user is logged in
 if(isset($_SESSION['username'])){
     //Getting username based on login saved info 

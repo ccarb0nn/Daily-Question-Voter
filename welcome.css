@@ -11,6 +11,7 @@ body {
 
 /* Styling Header 1 (Profile: Username) */
 h1 {
+    align-items: center;
     color: #333;
     font-size: 2em;
     margin-bottom: 10px;

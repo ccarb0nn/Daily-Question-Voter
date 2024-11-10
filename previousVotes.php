@@ -1,12 +1,24 @@
 <?php
 session_start();
 
+//Checking if request is coming from submitSearch (if so use that username rather than the current users username)
+if(isset($_SESSION['searchedUser'])){
+    $username = $_SESSION['searchedUser'];
+    unset($_SESSION['searchedUser']);
+}
 //Checking if user is logged in
-if(isset($_SESSION['username'])){
+else if(isset($_SESSION['username'])){
     //Getting username based on login saved info 
     $username = $_SESSION['username'];
+}
+else{
+    //User is not logged in, prompt them to login (Error)
+    header("Location: login.php");
+    exit();
+}
 
-    $filename = $username . ".txt";
+//Getting (or creating) users personal text file which stores all their previous votes 
+$filename = $username . ".txt";
     $lines = file($filename, FILE_IGNORE_NEW_LINES);
 
     //Store the questions and options
@@ -16,12 +28,6 @@ if(isset($_SESSION['username'])){
         list($question, $option) = explode(",", trim($line));
         $questions[] = ['question' => $question, 'option' => $option];
     }
-}
-else{
-    //User is not logged in, prompt them to login (Error)
-    header("Location: login.php");
-    exit();
-}
 ?>
 
 <!DOCTYPE html>

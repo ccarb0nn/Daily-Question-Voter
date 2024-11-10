@@ -2,7 +2,9 @@
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $user = $_POST['name'];
+    // Storing the submitted username (used to access the users profile info and previous voted results)
+    $_SESSION['searchedUser'] = $_POST['name'];
+    $user = $_SESSION['searchedUser'];
     $profile = validateUser($user);
 
     //Getting the Profile info
@@ -46,6 +48,7 @@ function validateUser($user){
     <p>Gender: <?php echo htmlspecialchars($gender); ?></p>
     <p>Voted Today: <?php echo htmlspecialchars($voted); ?></p>
     <p>Voted For Option: <?php echo htmlspecialchars($voteChoice); ?></p>
+    <a href="previousVotes.php">Previous Votes</a> <!-- Currently shows the current users prev votes rather than searched user -->
     <a href="home.php">Option Menu</a>
 </body>
 

@@ -29,6 +29,6 @@ else{
 	<p class="box"> <?php echo htmlspecialchars($questionText); ?></p>
 	<p class="box"> <?php echo htmlspecialchars("A) " . $optionA . " - " . $votesA); ?></p>
 	<p class="box"> <?php echo htmlspecialchars("B) " . $optionB . " - " . $votesB); ?></p>
-	<a href="home.php">Option Menue</a>
+	<a href="home.php">Option Menu</a>
 </body>
 </html>
