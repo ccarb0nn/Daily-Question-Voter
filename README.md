@@ -1,5 +1,3 @@
-Caleb Carbonneau
-
 # Daily Question Voter
 
 This project is a Daily Question Voter where all users have the opertunity to vote on the same random "would you rather" question once a day. This "would you rather" question changes each day but is the same question for all users. When accessing this application, the user will be prompted with a screen to either login to an existing account or create a new account with a unique username. Once the user has created an account with a unique username and/or has logged into their account, they will then be able to access all the features that this application offers. 
